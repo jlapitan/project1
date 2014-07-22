@@ -1,4 +1,13 @@
 $(function () {
+
+    var g=4;
+    $('#addnew').on('click',function(){
+        //alert('hi');
+        g++;
+        $('#items').append('<div id="'+g+'g" class="gauge">4g</div>')
+
+    });
+
     $('#2g').highcharts({
 
         exporting: {
